@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: #000; /* Зробимо фон чорним */
+}
+
+#scene-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#info {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Трохи темніше для кращого контрасту */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Гарантовано вище за сцену */
+}
+
+#info h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #00ffcc; /* Акцентний колір */
+    text-shadow: 0px 0px 10px #00ffcc;
+}
+
+#info p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+#info strong {
+    color: #00ffcc;
+}
